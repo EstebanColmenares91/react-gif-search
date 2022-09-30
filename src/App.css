@@ -1,0 +1,35 @@
+.App{
+    height: 100%;
+}
+
+img{
+    width: 100%;
+    min-width: 28rem;
+    height: 320px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.input{
+    height: 60px;
+    width: 250px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+.input:focus{
+    border: red 3px;
+}
+
+@media screen and (min-width: 600px) {
+    .gif--grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 450px));
+        gap: 20px;
+    }
+}
