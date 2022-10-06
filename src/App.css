@@ -1,11 +1,25 @@
-.App{
+/* .App{
     height: 100%;
+}
+ */
+.gif--grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 150px));
+    place-items: center;
+    place-content: center;
+    gap: 20px;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
 }
 
 img{
     width: 100%;
-    min-width: 28rem;
-    height: 320px;
+    height: 150px;
+    display: block;
+    object-fit: contain;
 }
 
 form{
@@ -29,7 +43,11 @@ form{
 @media screen and (min-width: 600px) {
     .gif--grid{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(310px, 450px));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 280px));
         gap: 20px;
+    }
+
+    img{
+        height: 200px;
     }
 }
